@@ -1,10 +1,11 @@
 {
-    "manifest_version": 3,
-    "name": "Black Background New Tab",
-    "version": "1.0",
-    "description": "Changes the background color of new tabs to black.",
-    "permissions": ["tabs"],
-    "chrome_url_overrides": {
-      "newtab": "newtab.html"
-    }
-  }
+  "manifest_version": 3,
+  "name": "Black Background New Tab",
+  "version": "1.0",
+  "description": "Changes the background color of new tabs to black.",
+  "permissions": ["tabs"],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "incognito": "split"
+}
