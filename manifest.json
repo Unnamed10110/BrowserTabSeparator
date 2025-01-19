@@ -1,12 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Black Background New Tab",
+  "name": "Custom Private New Tab",
   "version": "1.0",
-  "description": "Changes the background color of new tabs to black.",
-  "permissions": ["tabs", "activeTab", "storage"],
+  "description": "Customizes the new private tab page.",
+  "permissions": ["tabs", "activeTab"],
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
-  "host_permissions": ["<all_urls>"],
-  "incognito": "spanning"
+  "incognito": "split",
+  "background": {
+    "service_worker": "background.js"
+  }
 }
