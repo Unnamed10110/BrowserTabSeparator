@@ -28,43 +28,62 @@
       flex-direction: column;
     }
 
-    /* Search box styles */
-    form {
-      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    input[type="text"] {
-      width: 300px;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      outline: none;
-      margin-right: 10px;
-    }
-
-    input[type="submit"] {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4285F4; /* Google blue */
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #357ae8; /* Darker Google blue */
+    .suggestions li:hover {
+      background: rgba(255, 255, 255, 0.2);
     }
   </style>
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    .message-container {
+        text-align: center;
+    }
+
+    .message-box {
+        background-color: black;
+        padding: 30px;
+        border-radius: 15px;
+        display: inline-block;
+        opacity: 0.6; /* 80% opacity */
+    }
+
+    .message {
+        font-size: 36px;
+        color: white;
+        margin: 0;
+        opacity: 0.6; /* 80% opacity */
+    }
+</style>
+
+
+
+
+
 </head>
 <body>
-  <form action="https://www.google.com/search" method="get" target="_self">
-    <input type="text" name="q" placeholder="Search Google...">
-    <input type="submit" value="Search">
-  </form>
+
+  
+  <div class="message-container">
+    <div class="message-box">
+        <p class="message">...I can always do it tomorrow...</p>
+    </div>
+</div>
+
+
+
 </body>
-</html>
+</html> 
