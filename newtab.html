@@ -1,21 +1,70 @@
-<html><head>
-	<meta charset="UTF-8">
-	<title>────────────────────────────────────────────</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>────────────────────────────────────────────</title>
+  <style>
+    /* Reset styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
 
-	<link rel="stylesheet" type="text/css" href="newtab.css">
-	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="newtab.js"></script>
+    /* Background setup */
+    body {
+      background-image: url('https://github.com/Unnamed10110/zsh-pwsh-wt/blob/master/scripts/wp13962827-pillars-of-creation-iphone-wallpapers.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 
-	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAsC8qAP+EAACzh1cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAACAAAAAAAAACAAAAAAAAEiAAAAADAAAiAAAAAAMzAiAAAAAAAAMzAAAAAAAAAiMzMAAAAAAAADAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon">
+    /* Search box styles */
+    form {
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4285F4; /* Google blue */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #357ae8; /* Darker Google blue */
+    }
+  </style>
 </head>
-<style> 
-body { background-image: url('https://github.com/Unnamed10110/zsh-pwsh-wt/blob/master/scripts/wp13962827-pillars-of-creation-iphone-wallpapers.jpg?raw=true'); 
-background-size: cover; 
-/* or 'contain' based on how you want the image to fit */
- background-position: center; background-repeat: no-repeat; 
- /* You can add more styles as needed */ } 
- </style>
-
-<body><body>
-
-
+<body>
+  <form action="https://www.google.com/search" method="get" target="_self">
+    <input type="text" name="q" placeholder="Search Google...">
+    <input type="submit" value="Search">
+  </form>
+</body>
 </html>

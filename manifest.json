@@ -3,9 +3,10 @@
   "name": "Black Background New Tab",
   "version": "1.0",
   "description": "Changes the background color of new tabs to black.",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "activeTab", "storage"],
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
-  "incognito": "split"
+  "host_permissions": ["<all_urls>"],
+  "incognito": "spanning"
 }
